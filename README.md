@@ -6,7 +6,7 @@ Measurement data overlaid with [TIASim](https://github.com/aewallin/TIASim) pred
 See also [One-Inch-Photodetector](https://github.com/aewallin/One-Inch-Photodetector) if you don't need a second stage of gain.
 
 ## PCB
-PCB front.
+PCB front. 2-sided PCB, height 45mm x width 34mm.
 ![PCB front](/doc/2stage_tia_pcb_front.png "PCB front")
 PCB back. Note the through-hole photodiode is installed on the backside of the PCB.
 ![PCB back](/doc/2stage_tia_pcb_back.png "PCB back")
