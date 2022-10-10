@@ -16,7 +16,7 @@ Narrowband view of PDH-signal around 25 MHz.
 ![PDH2](/doc/2022-06-18_newPDH.png "PDH signal, narrow view")
 
 FGA015 InGaAs phototdiode, 30 kOhm transimpendance, 20 dB postgain.
-
+![FGA015](/doc/FGA015_30kohm_20db.png "FGA015 30 kOhm")
 
 ## PCB
 PCB front. 2-sided PCB, height 45mm x width 34mm.
