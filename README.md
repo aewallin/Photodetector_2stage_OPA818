@@ -7,10 +7,15 @@ See also [One-Inch-Photodetector](https://github.com/aewallin/One-Inch-Photodete
 
 ## Built and measured boards
 
-* S5793 Si photodiode, 33 kOhm transimpedance, 20 dB postgain, ca 38 MHz bandwidth
-* FGA015 InGaAs phototdiode, 30 kOhm transimpendance, 20 dB postgain
+Hamamatsu S5793 Si photodiode, 33 kOhm transimpedance, 20 dB postgain, ca 38 MHz bandwidth. Used for 674nm/30cm ultra-stable cavity PDH laser-lock since 2022-06.
 
 ![S5793](/doc/S5793_33kohm_20db.png "S5793 33 kOhm")
+Wideband view of PDH-locking signal spectrum. EOM frequency 25 MHz. 674nm power at photodetector ca 10 uW. Traces SA-floor (green), Detector Dark (Red), Bright (laser unlocked, Blue), Laser locked (yellow). Note 2nd harmonic at 50 MHz, and shot noise in blue trace at low frequencies.
+![PDH1](/doc/2022-06-18_newPDH_wide.png "PDH signal, wide view")
+Narrowband view of PDH-signal around 25 MHz.
+![PDH2](/doc/2022-06-18_newPDH.png "PDH signal, narrow view")
+
+FGA015 InGaAs phototdiode, 30 kOhm transimpendance, 20 dB postgain.
 
 
 ## PCB
