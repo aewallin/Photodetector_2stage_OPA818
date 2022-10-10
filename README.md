@@ -7,7 +7,7 @@ See also [One-Inch-Photodetector](https://github.com/aewallin/One-Inch-Photodete
 
 ## Built and measured boards
 
-* S5793 Si photodiode, 33 kOhm transimpedance, 20 dB postgain
+* S5793 Si photodiode, 33 kOhm transimpedance, 20 dB postgain, ca 38 MHz bandwidth
 * FGA015 InGaAs phototdiode, 30 kOhm transimpendance, 20 dB postgain
 
 ![S5793](/doc/S5793_33kohm_20db.png "S5793 33 kOhm")
