@@ -5,6 +5,14 @@ Measurement data overlaid with [TIASim](https://github.com/aewallin/TIASim) pred
 
 See also [One-Inch-Photodetector](https://github.com/aewallin/One-Inch-Photodetector) if you don't need a second stage of gain.
 
+## Built and measured boards
+
+* S5793 Si photodiode, 33 kOhm transimpedance, 20 dB postgain
+* FGA015 InGaAs phototdiode, 30 kOhm transimpendance, 20 dB postgain
+
+![S5793](/doc/S5793_33kohm_20db.png "S5793 33 kOhm")
+
+
 ## PCB
 PCB front. 2-sided PCB, height 45mm x width 34mm.
 ![PCB front](/doc/2stage_tia_pcb_front.png "PCB front")
