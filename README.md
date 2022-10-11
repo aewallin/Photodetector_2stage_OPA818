@@ -23,3 +23,13 @@ PCB front. 2-sided PCB, height 45mm x width 34mm.
 ![PCB front](/doc/2stage_tia_pcb_front.png "PCB front")
 PCB back. Note the through-hole photodiode is installed on the backside of the PCB.
 ![PCB back](/doc/2stage_tia_pcb_back.png "PCB back")
+
+## Enclosure
+CNC machined Aluminium enclosure with 5mm hole for photodiode at 25mm height from optical table. M6 holes on 25mm grid for mounting to optical breadboard.
+Overall height 68mm x width 66 mm x depth 28mm. 4pcs M3 threads for mounting the top/PCB.
+
+![Enclosure front](/enclosure/enclosure_front.png "Enclosure front")
+
+Enlcosure top with holes for SMA-connectors and power-supply wires. The top could be made from PCB-material also?
+
+![Enclosure lid](/enclosure/enclosure_lid.png "Enclosure lid")
