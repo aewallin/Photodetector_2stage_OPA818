@@ -25,6 +25,9 @@ PCB back. Note the through-hole photodiode is installed on the backside of the P
 ![PCB back](/doc/2stage_tia_pcb_back.png "PCB back")
 
 ## Enclosure
+
+Aluminium enclosure with photodetector PCB and FGA015 photodiode, ca 2022-10.
+
 ![Enclosure photo](/doc/20221012_photodetector.jpg "Enclosure photo")
 
 CNC machined Aluminium enclosure with 5mm hole for photodiode at 25mm height from optical table. M6 holes on 25mm grid for mounting to optical breadboard.
