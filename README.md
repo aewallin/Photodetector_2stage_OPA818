@@ -25,7 +25,7 @@ PCB back. Note the through-hole photodiode is installed on the backside of the P
 ![PCB back](/doc/2stage_tia_pcb_back.png "PCB back")
 
 ## Enclosure
-![Enclosure photo](/doc/20220112_photodetector.jpg "Enclosure photo")
+![Enclosure photo](/doc/20221012_photodetector.jpg "Enclosure photo")
 
 CNC machined Aluminium enclosure with 5mm hole for photodiode at 25mm height from optical table. M6 holes on 25mm grid for mounting to optical breadboard.
 Overall height 68mm x width 66 mm x depth 28mm. 4pcs M3 threads for mounting the top/PCB.
