@@ -18,6 +18,12 @@ Narrowband view of PDH-signal around 25 MHz.
 FGA015 InGaAs phototdiode, 30 kOhm transimpendance, 20 dB postgain.
 ![FGA015](/doc/FGA015_30kohm_20db.png "FGA015 30 kOhm")
 
+## Noninverting 2nd gain stage
+
+Gain vs. frequency for 2nd stage gain using OPA818.
+![OPA818_noninverting](/doc/OPA818_noninverting.png "OPA818 noninverting")
+
+
 ## PCB
 PCB front. 2-sided PCB, height 45mm x width 34mm.
 ![PCB front](/doc/2stage_tia_pcb_front.png "PCB front")
