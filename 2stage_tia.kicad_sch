@@ -4932,7 +4932,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e055c5a3-5a43-4826-bc56-f90001c043a4)
   )
-  (text "use OPA657 here?\nhttps://www.ti.com/lit/ds/sbos197f/sbos197f.pdf\n\na much slower op-amp would suffice!?"
+  (text "use OPA657 here?\nhttps://www.ti.com/lit/ds/sbos197f/sbos197f.pdf\n\na much slower op-amp would suffice!?\nOPA659 for unity-gain stability\nor OPA188?\n"
     (at 250.19 80.01 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e15adc8a-ae00-427e-b91a-c67c44f59a2b)
