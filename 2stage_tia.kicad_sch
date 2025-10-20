@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "a795f1ba-cdd5-4cc5-9a52-08586e982934")
 	(paper "A3")
 	(title_block
@@ -56,7 +56,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" " 2.7 GHz, High-Voltage, FET-Input, Low Noise, Operational Amplifier, WSON-8"
+			(property "Description" "2.7 GHz, High-Voltage, FET-Input, Low Noise, Operational Amplifier, WSON-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -84,24 +84,6 @@
 				)
 			)
 			(symbol "OPA818xDRG_0_0"
-				(pin input line
-					(at 0 7.62 270)
-					(length 5.08)
-					(name "~{PD}"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
 					(at -2.54 7.62 270)
 					(length 3.81)
@@ -113,6 +95,24 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 7.62 270)
+					(length 5.08)
+					(name "~{PD}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -142,18 +142,6 @@
 			(symbol "OPA818xDRG_0_1"
 				(polyline
 					(pts
-						(xy 5.08 0) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
 					)
 					(stroke
@@ -164,9 +152,22 @@
 						(type background)
 					)
 				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin no_connect line
 					(at -5.08 -5.08 90)
-					(length 3.81) hide
+					(length 3.81)
+					(hide yes)
 					(name "NC"
 						(effects
 							(font
@@ -202,17 +203,17 @@
 				)
 			)
 			(symbol "OPA818xDRG_1_1"
-				(pin output line
-					(at 7.62 2.54 180)
+				(pin input line
+					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "FB"
+					(name "+"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -238,24 +239,6 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
 					(at -2.54 -7.62 90)
 					(length 3.81)
@@ -274,7 +257,26 @@
 						)
 					)
 				)
+				(pin output line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Amplifier_Operational:OPA847xDBV"
 			(pin_names
@@ -360,24 +362,6 @@
 					)
 				)
 				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at -2.54 7.62 270)
 					(length 3.81)
 					(name "V+"
@@ -395,19 +379,17 @@
 						)
 					)
 				)
-			)
-			(symbol "OPA847xDBV_1_1"
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -415,6 +397,8 @@
 						)
 					)
 				)
+			)
+			(symbol "OPA847xDBV_1_1"
 				(pin input line
 					(at -7.62 2.54 0)
 					(length 2.54)
@@ -469,11 +453,32 @@
 						)
 					)
 				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:Conn_01x03_Female"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -539,21 +544,9 @@
 				)
 			)
 			(symbol "Conn_01x03_Female_1_1"
-				(arc
-					(start 0 -2.032)
-					(mid -0.5058 -2.54)
-					(end 0 -3.048)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
+						(xy -1.27 2.54) (xy -0.508 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -577,7 +570,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 2.54) (xy -0.508 2.54)
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -588,21 +581,33 @@
 					)
 				)
 				(arc
-					(start 0 0.508)
-					(mid -0.5058 0)
-					(end 0 -0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 3.048)
+					(start 0 2.032)
 					(mid -0.5058 2.54)
-					(end 0 2.032)
+					(end 0 3.048)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -666,10 +671,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:Conn_Coaxial"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -698,7 +706,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" " ~"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -735,18 +743,6 @@
 				)
 			)
 			(symbol "Conn_Coaxial_0_1"
-				(arc
-					(start -1.778 -0.508)
-					(mid 0.222 -1.808)
-					(end 1.778 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -2.54 0) (xy -0.508 0)
@@ -759,12 +755,24 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 -1.778)
-					)
+				(arc
+					(start -1.778 0.508)
+					(mid 0.222 1.8083)
+					(end 1.778 0)
 					(stroke
-						(width 0)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.778 0)
+					(mid 0.222 -1.808)
+					(end -1.778 -0.508)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -782,12 +790,12 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 1.778 0)
-					(mid 0.222 1.8083)
-					(end -1.778 0.508)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.778)
+					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -833,10 +841,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:TestPoint_2Pole"
 			(pin_names
-				(offset 0.762) hide)
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -961,9 +972,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -1036,7 +1050,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1048,7 +1062,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1097,11 +1111,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:D_ALT"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1172,18 +1191,6 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
@@ -1192,6 +1199,18 @@
 					)
 					(fill
 						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -1233,11 +1252,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:L"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1304,32 +1328,8 @@
 			)
 			(symbol "L_0_1"
 				(arc
-					(start 0 -2.54)
-					(mid 0.6323 -1.905)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 0.635)
+					(start 0 2.54)
+					(mid 0.6323 1.905)
 					(end 0 1.27)
 					(stroke
 						(width 0)
@@ -1341,8 +1341,32 @@
 				)
 				(arc
 					(start 0 1.27)
-					(mid 0.6323 1.905)
-					(end 0 2.54)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -1390,9 +1414,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -1511,11 +1538,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1613,6 +1645,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Regulator_Linear:LT3042xMSE"
 			(exclude_from_sim no)
@@ -1712,45 +1745,10 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 90)
-					(length 2.54) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at -10.16 2.54 0)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "IN"
 						(effects
 							(font
@@ -1784,24 +1782,6 @@
 						)
 					)
 				)
-				(pin open_collector line
-					(at 10.16 -5.08 180)
-					(length 2.54)
-					(name "PG"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at -10.16 -2.54 0)
 					(length 2.54)
@@ -1813,24 +1793,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "PGFB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1856,6 +1818,25 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_in line
 					(at 0 -10.16 90)
 					(length 2.54)
@@ -1867,6 +1848,24 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1892,7 +1891,44 @@
 						)
 					)
 				)
+				(pin input line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "PGFB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "PG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "photodiode_amplifier-rescue:LT3093xMSE-lt3093xmse"
 			(exclude_from_sim no)
@@ -1952,27 +1988,10 @@
 				)
 			)
 			(symbol "LT3093xMSE-lt3093xmse_0_0"
-				(pin power_out line
-					(at 10.16 2.54 180)
-					(length 2.54) hide
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at -10.16 2.54 0)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "IN"
 						(effects
 							(font
@@ -1981,6 +2000,25 @@
 						)
 					)
 					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(hide yes)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2021,45 +2059,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "OUTS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at -10.16 2.54 0)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "IN"
 						(effects
 							(font
@@ -2104,42 +2107,6 @@
 						)
 					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "PGFB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -5.08 180)
-					(length 2.54)
-					(name "ILIM"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2201,7 +2168,80 @@
 						)
 					)
 				)
+				(pin power_out line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "OUTS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "PGFB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "ILIM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "photodiode_amplifier-rescue:S597x-s597x"
 			(pin_names
@@ -2286,18 +2326,6 @@
 			(symbol "S597x-s597x_0_1"
 				(polyline
 					(pts
-						(xy -1.27 0) (xy -3.81 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -1.27 1.27) (xy -1.27 -1.27)
 					)
 					(stroke
@@ -2310,31 +2338,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.762 1.778) (xy -0.254 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 3.302) (xy -0.762 1.778) (xy -0.762 2.286)
+						(xy -1.27 0) (xy -3.81 0)
 					)
 					(stroke
 						(width 0)
@@ -2358,7 +2362,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.032 3.302) (xy 0.508 1.778) (xy 0.508 2.286) (xy 0.508 1.778) (xy 1.016 1.778)
+						(xy -0.762 1.778) (xy -0.254 1.778)
 					)
 					(stroke
 						(width 0)
@@ -2371,6 +2375,42 @@
 				(circle
 					(center 0 0)
 					(radius 3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 3.302) (xy -0.762 1.778) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 3.302) (xy 0.508 1.778) (xy 0.508 2.286) (xy 0.508 1.778) (xy 1.016 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 1.27 0)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -2418,6 +2458,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -2497,7 +2538,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -2514,7 +2556,305 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "DNI"
+		(exclude_from_sim no)
+		(at 226.06 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "009ba6d1-6340-4264-9398-2b1fbe8f6958")
+	)
+	(text "See MeasurementData sheet for measurements and\nnoise-models for built 2-stage detectors:"
+		(exclude_from_sim no)
+		(at 111.76 257.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "142057d4-46b7-4233-adc4-2dcf00bba11f")
+	)
+	(text "https://www.ti.com/lit/ds/symlink/opa818.pdf\np27"
+		(exclude_from_sim no)
+		(at 127 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ab62c3d-9029-4163-8ef2-43c3dd81f105")
+	)
+	(text "AC-coupled main output (full bandwidth)"
+		(exclude_from_sim no)
+		(at 299.72 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "29f9723e-c9ce-497a-8621-8bc8579b75be")
+	)
+	(text "Mechanical design of Aluminium enclosure\nOptical beam-height over table 25mm\nMounting-holes for M6 screws on 25mm grid"
+		(exclude_from_sim no)
+		(at 304.8 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "327cd63f-4c99-4213-a2b6-bd8388a9175b")
+	)
+	(text "Photodiodes with TO-18 footprint:\n\nFarnell 1495575\nHamamatsu S5973\nD= 400um active area\nCd=1.6 pF @ Vr=3V3\n\nThorlabs FDS015\nD=150 um active area\n0.65pF @ Vr = 5 V\n\nThorlabs FDS025\nD= 250 um active area, with ball lens\n0.94 pF @ Vr = 5 V\n\nHamamatsu S5972\nD= 800um active area\n3 pF @ Vr = 10 V\n\nHamamatsu S5971\nD= 1.2 mm active area\n3 pF @ Vr = 10 V\n\n\nOSI FCI-125G-006HRL\nHamamatsu S9055(-01)\n\nThorlabs FGA01FC, InGaAs, 2pF @ 5V\nsame as OSI INGAAS-120L-FC\n\nThorlabs FGA015, InGaAs, 1.5 pF @ 5V\nD = 0.15 mm actuve area\n\nFGA01, ball lens\n\nFor estimating Bandwidth, Transimpedance-amplifier noise, shot-noise limit, etc, see:\nTIASim at https://github.com/aewallin/TIASim"
+		(exclude_from_sim no)
+		(at 69.85 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4d74de08-ae92-4d60-92b6-e29c2f2419d4")
+	)
+	(text "S5793 bottom view"
+		(exclude_from_sim no)
+		(at 105.41 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "616d28c5-72ff-442d-b993-ed61d95e6746")
+	)
+	(text "CF: install as needed"
+		(exclude_from_sim no)
+		(at 182.88 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "63a5166e-d5d7-400d-8cd8-a44cd76b5051")
+	)
+	(text "56k"
+		(exclude_from_sim no)
+		(at 161.29 214.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6fe73553-0da1-44e0-aca8-d8eab4e4f890")
+	)
+	(text "2022 detector with OPA818\n90 dBohms transimpedance (33kOhm)\n20 dB postgain (10 V/V)\n110 dB total"
+		(exclude_from_sim no)
+		(at 217.17 205.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f1eec2b-111a-4d6d-987b-ca783cccffc8")
+	)
+	(text "Decoupling caps for three op-amps"
+		(exclude_from_sim no)
+		(at 350.52 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "90077615-a25c-4673-b481-63d4d539b32c")
+	)
+	(text "Lead colors\nBrown (+12V)\nBlack (GND)\nBlue (-12V)"
+		(exclude_from_sim no)
+		(at 113.03 212.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "94e3b5bf-0d11-46d2-b703-e5754e7d6e1a")
+	)
+	(text "10uW optical \n-> 4.4 uA photocurrent\n-> 4.4uA*15kOhm = 66mV"
+		(exclude_from_sim no)
+		(at 170.18 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "970e0f64-111f-41e3-9f5a-fb0d0f6fa101")
+	)
+	(text "Mechanical design for enclosure top"
+		(exclude_from_sim no)
+		(at 227.33 214.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "adba4705-0145-46ac-b264-60ed63941b68")
+	)
+	(text "2019 detector (OPA657) gain:\n78 dBohms transimpedance (8k2 ohms)\n+20 dB postgain (10V/V)\n+28 dB postgain (ZFL-500LN)\n126 dB total\n\n2019Modified detector (OPA657) gain:\n92 dBohms transimpedance (39k ohms)\n+20 dB postgain (10V/V)\n\n112 dB total"
+		(exclude_from_sim no)
+		(at 217.17 191.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b5a16d44-820b-40fe-ba6f-60b509cacaf8")
+	)
+	(text "PSU:\nThorlabs LDS12B\n±12 VDC Regulated Linear Power Supply, 6 W\nLumberg RSMV3 male connector, 3-pin\n\nPSU-lead: Digikey A120947-ND (mates with Thorlabs 3-pin psu connector)\n3-pin M8 female connector\n1.5 m 3-wire lead, solder to PCB"
+		(exclude_from_sim no)
+		(at 46.99 243.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9035079-28fb-4a9c-98bd-0c7f8ab4051f")
+	)
+	(text "Low-pass filtered DC-coupled output\nfor e.g. alignment"
+		(exclude_from_sim no)
+		(at 299.72 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c244f577-e3f5-4023-a2a4-432ec7c50958")
+	)
+	(text "float or ground\nthe diode can"
+		(exclude_from_sim no)
+		(at 162.56 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cbdcaa78-3bbc-413f-91bf-2709119373ce")
+	)
+	(text "Rset = Vout / 100uA"
+		(exclude_from_sim no)
+		(at 157.48 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d0a0deb1-4f0f-4ede-b730-2c6d67cb9618")
+	)
+	(text "D6.4 mm holes for SMA-connectors\nD5 mm hole for power-supply cables"
+		(exclude_from_sim no)
+		(at 243.84 232.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1db8991-517a-4e77-996a-fc31375ea0b4")
+	)
+	(text "DNI"
+		(exclude_from_sim no)
+		(at 265.43 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "da56e6f6-d93a-44e1-99c6-67cb03654947")
+	)
+	(text "G = (1+300/33) = 10.09 V/V = 20.1 dB"
+		(exclude_from_sim no)
+		(at 264.16 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc2801a1-d539-4721-b31f-fe196b9f13df")
+	)
+	(text "OPA818 max supply voltage 13V\nuse e.g. +V=+6V and -V=-6V\n\n"
+		(exclude_from_sim no)
+		(at 177.8 248.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e055c5a3-5a43-4826-bc56-f90001c043a4")
+	)
+	(text "use OPA657 here?\nhttps://www.ti.com/lit/ds/sbos197f/sbos197f.pdf\n\na much slower op-amp would suffice!?\nOPA659 for unity-gain stability\nor OPA188?\n"
+		(exclude_from_sim no)
+		(at 250.19 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e15adc8a-ae00-427e-b91a-c67c44f59a2b")
+	)
+	(text "edge-mount SMA\nfarnell  2112467\nAmphenol 132289"
+		(exclude_from_sim no)
+		(at 273.05 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ebca7c5e-ae52-43e5-ac6c-69a96a9a5b24")
+	)
+	(text "DNI"
+		(exclude_from_sim no)
+		(at 266.7 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f90a2df1-e09c-487b-85b9-251422858080")
+	)
+	(text "1 kOhm\n100 nF\nRC-filter 1.6 kHz"
+		(exclude_from_sim no)
+		(at 215.9 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fc70bcb4-9b5a-4912-b50f-d97777b843b6")
 	)
 	(junction
 		(at 358.14 142.24)
@@ -5853,7 +6193,25 @@
 			"kA60nQMgMUW7324Fn1jYz1SVVq/vMEPDcviv5x/dWmkr/VoLAICvDmNo280+dWPfUC24CwIZAn3a"
 			"AJAaWZEe8/jp65SckmqKoaL9U6fuTk5d2rfq+jzgM5AFT876ReSRCCFcy8HLp68+3JcBQmT2syuB"
 			"L3PLqgmGumHXvv2dTb+JVTsAkAIEbQAAAAAAMgD+ZwAAAAAAyAAI2gAAAAAAZAAEbQAAAAAAMgCC"
-			"NgAAAAAAGQBBGwAAAACADPg/0PMsWf4AAnIAAAAASUVORK5CYII="
+			"NgAAAAAAGQBBGwAAAACADPg/0PMsWf4AAnIAAAAASUVORK5CYIIAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
 		)
 	)
 	(image
@@ -6358,7 +6716,25 @@
 			"0Hu7PjFLRGIH7jxT+KZD7e2DxzLiFwCMGsQvjFqHj8ikW0RcxqyB+Mk9H+2xTKMezm8BAPBPxC/A"
 			"CT+JXwCAUYlpVwEAABRF/AIAAFAU8QsAAEBRxC8AAABFMfQeAABAUfR+AQAAKIr4BQAAoCjiFwAA"
 			"gKKIXwAAAIoifgEAACiK+AUAAKAo4hcAAICiiF8AAACKIn4BAAAoivgFAACgKOIXAACAoohfAAAA"
-			"iiJ+AQAAKIr4BQAAoCjiFwAAgKL+P7BoIs5p+p03AAAAAElFTkSuQmCC"
+			"iiJ+AQAAKIr4BQAAoCjiFwAAgKL+P7BoIs5p+p03AAAAAElFTkSuQmCCpkT/06ZE/9OmRP/TpkT/"
+			"06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE/9OmRP/T"
+			"pkT/06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE/9OmRP8sLD3/LCw9/yws"
+			"Pf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V"
+			"/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/"
+			"579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/47xU/6mOTf8s"
+			"LD3/LCw9/ywsPf8sLD3/LCw96SwsPf8sLD3/LCw9/ywsPf88OD3/fWdA/8KZQ//TpkT/06ZE/9Om"
+			"RP/TpkT/06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE"
+			"/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/"
+			"06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE/9OmRP8sLD3/LCw9/ywsPf/nv1X/579V/+e/Vf/n"
+			"v1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/"
+			"Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V"
+			"/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf+HdEn/Pjo//ywsPf8sLD3/LCw9/ywsPf8sLD3+"
+			"LS08VSwsPecsLD3/LCw9/ywsPf8sLD3/LCw9/y4uPf+ph0L/06ZE/9OmRP/TpkT/06ZE/9OmRP/T"
+			"pkT/06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE/9Om"
+			"RP/TpkT/06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE/9OmRP/TpkT/06ZE"
+			"/9OmRP/TpkT/06ZE/9OmRP8sLD3/LCw9/ywsPf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/"
+			"579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/n"
+			"v1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/579V/+e/Vf/nv1X/5w=="
 		)
 	)
 	(image
@@ -7127,7 +7503,25 @@
 			"Wq1WIBBs77oDQQcWjAToQEin0ysrK9FoNJPJAAAYDAaLxSoqKlIqlbt9aBC0h8BIgCAIgjbBghYQ"
 			"BEHQJhgJEARB0CYYCRAEQdAmGAkQBEHQJhgJEARB0CYYCRAEQdAmGAkQBEHQJhgJEARB0CYYCRAE"
 			"QdAmGAkQBEHQJhgJEARB0CYYCRAEQdAmGAkQBEHQJhgJEARB0CYYCRAEQdAmGAkQBEHQJhgJEARB"
-			"0Kb/D0QtxHTBL5qtAAAAAElFTkSuQmCC"
+			"0Kb/D0QtxHTBL5qtAAAAAElFTkSuQmCCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
 		)
 	)
 	(image
@@ -7902,309 +8296,29 @@
 			"N0+FnrmJ4Rg1Cr8OhY+PdYOJiIjooTGNuQqvSKSu7HV3MiwUIcEICoQ0AAH+GDvWensnVH9VNQFA"
 			"49cArFNafiXTGBERkQMwjbkKYbRW39TVH3Fr8auaXOshAyIiIvfFZypdxdixg81hrkD2Cxj9RkRE"
 			"5BysN0ZEREQkJqYxIiIiIjExjRERERGJiaP4iYiIiMTEvjEiIiIiMf0/rUKqS8MniOgAAAAASUVO"
-			"RK5CYII="
+			"RK5CYIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB////AAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAA=="
 		)
-	)
-	(text "DNI"
-		(exclude_from_sim no)
-		(at 226.06 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "009ba6d1-6340-4264-9398-2b1fbe8f6958")
-	)
-	(text "See MeasurementData sheet for measurements and\nnoise-models for built 2-stage detectors:"
-		(exclude_from_sim no)
-		(at 111.76 257.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "142057d4-46b7-4233-adc4-2dcf00bba11f")
-	)
-	(text "https://www.ti.com/lit/ds/symlink/opa818.pdf\np27"
-		(exclude_from_sim no)
-		(at 127 31.75 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1ab62c3d-9029-4163-8ef2-43c3dd81f105")
-	)
-	(text "AC-coupled main output (full bandwidth)"
-		(exclude_from_sim no)
-		(at 299.72 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "29f9723e-c9ce-497a-8621-8bc8579b75be")
-	)
-	(text "Mechanical design of Aluminium enclosure\nOptical beam-height over table 25mm\nMounting-holes for M6 screws on 25mm grid"
-		(exclude_from_sim no)
-		(at 304.8 177.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "327cd63f-4c99-4213-a2b6-bd8388a9175b")
-	)
-	(text "Photodiodes with TO-18 footprint:\n\nFarnell 1495575\nHamamatsu S5973\nD= 400um active area\nCd=1.6 pF @ Vr=3V3\n\nThorlabs FDS015\nD=150 um active area\n0.65pF @ Vr = 5 V\n\nThorlabs FDS025\nD= 250 um active area, with ball lens\n0.94 pF @ Vr = 5 V\n\nHamamatsu S5972\nD= 800um active area\n3 pF @ Vr = 10 V\n\nHamamatsu S5971\nD= 1.2 mm active area\n3 pF @ Vr = 10 V\n\n\nOSI FCI-125G-006HRL\nHamamatsu S9055(-01)\n\nThorlabs FGA01FC, InGaAs, 2pF @ 5V\nsame as OSI INGAAS-120L-FC\n\nThorlabs FGA015, InGaAs, 1.5 pF @ 5V\nD = 0.15 mm actuve area\n\nFGA01, ball lens\n\nFor estimating Bandwidth, Transimpedance-amplifier noise, shot-noise limit, etc, see:\nTIASim at https://github.com/aewallin/TIASim"
-		(exclude_from_sim no)
-		(at 69.85 139.7 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4d74de08-ae92-4d60-92b6-e29c2f2419d4")
-	)
-	(text "S5793 bottom view"
-		(exclude_from_sim no)
-		(at 105.41 166.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "616d28c5-72ff-442d-b993-ed61d95e6746")
-	)
-	(text "CF: install as needed"
-		(exclude_from_sim no)
-		(at 182.88 113.03 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "63a5166e-d5d7-400d-8cd8-a44cd76b5051")
-	)
-	(text "56k"
-		(exclude_from_sim no)
-		(at 161.29 214.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6fe73553-0da1-44e0-aca8-d8eab4e4f890")
-	)
-	(text "2022 detector with OPA818\n90 dBohms transimpedance (33kOhm)\n20 dB postgain (10 V/V)\n110 dB total"
-		(exclude_from_sim no)
-		(at 217.17 205.74 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8f1eec2b-111a-4d6d-987b-ca783cccffc8")
-	)
-	(text "Decoupling caps for three op-amps"
-		(exclude_from_sim no)
-		(at 350.52 73.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "90077615-a25c-4673-b481-63d4d539b32c")
-	)
-	(text "Lead colors\nBrown (+12V)\nBlack (GND)\nBlue (-12V)"
-		(exclude_from_sim no)
-		(at 113.03 212.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "94e3b5bf-0d11-46d2-b703-e5754e7d6e1a")
-	)
-	(text "10uW optical \n-> 4.4 uA photocurrent\n-> 4.4uA*15kOhm = 66mV"
-		(exclude_from_sim no)
-		(at 170.18 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "970e0f64-111f-41e3-9f5a-fb0d0f6fa101")
-	)
-	(text "Mechanical design for enclosure top"
-		(exclude_from_sim no)
-		(at 227.33 214.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "adba4705-0145-46ac-b264-60ed63941b68")
-	)
-	(text "2019 detector (OPA657) gain:\n78 dBohms transimpedance (8k2 ohms)\n+20 dB postgain (10V/V)\n+28 dB postgain (ZFL-500LN)\n126 dB total\n\n2019Modified detector (OPA657) gain:\n92 dBohms transimpedance (39k ohms)\n+20 dB postgain (10V/V)\n\n112 dB total"
-		(exclude_from_sim no)
-		(at 217.17 191.77 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b5a16d44-820b-40fe-ba6f-60b509cacaf8")
-	)
-	(text "PSU:\nThorlabs LDS12B\n±12 VDC Regulated Linear Power Supply, 6 W\nLumberg RSMV3 male connector, 3-pin\n\nPSU-lead: Digikey A120947-ND (mates with Thorlabs 3-pin psu connector)\n3-pin M8 female connector\n1.5 m 3-wire lead, solder to PCB"
-		(exclude_from_sim no)
-		(at 46.99 243.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b9035079-28fb-4a9c-98bd-0c7f8ab4051f")
-	)
-	(text "Low-pass filtered DC-coupled output\nfor e.g. alignment"
-		(exclude_from_sim no)
-		(at 299.72 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c244f577-e3f5-4023-a2a4-432ec7c50958")
-	)
-	(text "float or ground\nthe diode can"
-		(exclude_from_sim no)
-		(at 162.56 111.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cbdcaa78-3bbc-413f-91bf-2709119373ce")
-	)
-	(text "Rset = Vout / 100uA"
-		(exclude_from_sim no)
-		(at 157.48 177.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d0a0deb1-4f0f-4ede-b730-2c6d67cb9618")
-	)
-	(text "D6.4 mm holes for SMA-connectors\nD5 mm hole for power-supply cables"
-		(exclude_from_sim no)
-		(at 243.84 232.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d1db8991-517a-4e77-996a-fc31375ea0b4")
-	)
-	(text "DNI"
-		(exclude_from_sim no)
-		(at 265.43 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "da56e6f6-d93a-44e1-99c6-67cb03654947")
-	)
-	(text "G = (1+300/33) = 10.09 V/V = 20.1 dB"
-		(exclude_from_sim no)
-		(at 264.16 158.75 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "dc2801a1-d539-4721-b31f-fe196b9f13df")
-	)
-	(text "OPA818 max supply voltage 13V\nuse e.g. +V=+6V and -V=-6V\n\n"
-		(exclude_from_sim no)
-		(at 177.8 248.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e055c5a3-5a43-4826-bc56-f90001c043a4")
-	)
-	(text "use OPA657 here?\nhttps://www.ti.com/lit/ds/sbos197f/sbos197f.pdf\n\na much slower op-amp would suffice!?\nOPA659 for unity-gain stability\nor OPA188?\n"
-		(exclude_from_sim no)
-		(at 250.19 80.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e15adc8a-ae00-427e-b91a-c67c44f59a2b")
-	)
-	(text "edge-mount SMA\nfarnell  2112467\nAmphenol 132289"
-		(exclude_from_sim no)
-		(at 273.05 130.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ebca7c5e-ae52-43e5-ac6c-69a96a9a5b24")
-	)
-	(text "DNI"
-		(exclude_from_sim no)
-		(at 266.7 144.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f90a2df1-e09c-487b-85b9-251422858080")
-	)
-	(text "1 kOhm\n100 nF\nRC-filter 1.6 kHz"
-		(exclude_from_sim no)
-		(at 215.9 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fc70bcb4-9b5a-4912-b50f-d97777b843b6")
 	)
 	(label "VBIAS"
 		(at 143.51 97.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8215,7 +8329,6 @@
 	)
 	(label "-VIN"
 		(at 137.16 219.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8226,7 +8339,6 @@
 	)
 	(label "+VIN"
 		(at 135.89 198.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13996,6 +14108,10 @@
 	(sheet
 		(at 114.3 261.62)
 		(size 30.48 6.35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -14036,4 +14152,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
